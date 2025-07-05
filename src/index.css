@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "Satoshi";
+  src: url("/fonts/Satoshi-Variable.ttf") format("truetype");
+  font-weight: 100 900; /* Range for variable font */
+  font-style: normal;
+  font-display: swap;
+}
+
+@theme inline {
+  /* Screens */
+  --breakpoint-*: initial;
+  --breakpoint-sm: 480px; /* @media (min-width: 480px) */
+  --breakpoint-md: 768px; /* @media (min-width: 768px) */
+  --breakpoint-lg: 1024px; /* @media (min-width: 1024px) */
+  --breakpoint-xl: 1280px; /* @media (min-width: 1280px) */
+  --breakpoint-2xl: 1536px; /* @media (min-width: 1536px) */
+
+  /* Fonts */
+  --font-Satoshi: "Satoshi", sans-serif;
+
+  /* Custom Colors */
+  --color-text-green: #4bbb44;
+  --color-text-black: #000000;
+  --color-text-header: #1e1e1e;
+  --color-background-white: #f7f7f7;
+  --color-background-alt: #f0f0f0;
+}
+
+@layer utilities {
+  .container {
+    width: 100%;
+    max-width: 1536px;
+    margin-inline: auto;
+  }
+}
+
+.testimonial-swiper {
+  height: 315px !important;
+}
+
+.teams-swiper {
+  height: 350px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #4bbb44 !important;
+}
+
+html {
+  font-family: var(--font-Satoshi);
+  scroll-behavior: smooth;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-style: normal;
+  font-weight: normal;
+  font-family: var(--font-Satoshi);
+  background: var(--color-background-white);
+  color: var(--color-text-black);
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+.hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera */
+}
