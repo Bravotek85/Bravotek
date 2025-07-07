@@ -4,11 +4,11 @@ import Logo from "../../assets/images/logo.svg";
 import email from "../../assets/icons/email.svg";
 import call from "../../assets/icons/call.svg";
 import location from "../../assets/icons/location.svg";
-import linkedin from "../../assets/icons/linkedin.svg";
+// import linkedin from "../../assets/icons/linkedin.svg";
 import instagram from "../../assets/icons/instagram.svg";
-import facebook from "../../assets/icons/facebook.svg";
+// import facebook from "../../assets/icons/facebook.svg";
 // import twitter from "../../assets/icons/x.svg";
-import youtube from "../../assets/icons/youtube.svg";
+// import youtube from "../../assets/icons/youtube.svg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -87,7 +87,7 @@ const Footer = () => {
             <div className="sm:col-span-2 lg:col-span-1 md:ml-10">
               <h3 className="text-base font-bold mb-4 text-text-green font-Satoshi leading-6">Socials</h3>
               <ul className="flex flex-col flex-wrap gap-4 justify-center items-start">
-                <li>
+                {/* <li>
                   <Link
                     to="/"
                     className="text-[#8B8B8B] text-sm leading-5 hover:opacity-80 transition-opacity flex items-center justify-center gap-2"
@@ -95,11 +95,11 @@ const Footer = () => {
                     <img src={linkedin} alt="logo" loading="lazy" decoding="async" width={24} height={24} />
                     <span>LinkedIn</span>
                   </Link>
-                </li>
+                </li> */}
 
                 <li>
                   <Link
-                    to="/"
+                    to="http://www.instagram.com/bravotek"
                     className="text-[#8B8B8B] text-sm leading-5 hover:opacity-80 transition-opacity flex items-center justify-center gap-2"
                   >
                     <img src={instagram} alt="logo" loading="lazy" decoding="async" width={24} height={24} />
@@ -117,7 +117,7 @@ const Footer = () => {
                   </Link>
                 </li> */}
 
-                <li>
+                {/* <li>
                   <Link
                     to="/"
                     className="text-[#8B8B8B] text-sm leading-5 hover:opacity-80 transition-opacity flex items-center justify-center gap-2"
@@ -125,9 +125,9 @@ const Footer = () => {
                     <img src={facebook} alt="logo" loading="lazy" decoding="async" width={24} height={24} />
                     <span>Facebook</span>
                   </Link>
-                </li>
+                </li> */}
 
-                <li>
+                {/* <li>
                   <Link
                     to="/"
                     className="text-[#8B8B8B] text-sm leading-5 hover:opacity-80 transition-opacity flex items-center justify-center gap-2"
@@ -135,7 +135,7 @@ const Footer = () => {
                     <img src={youtube} alt="logo" loading="lazy" decoding="async" width={24} height={24} />
                     <p className="">Youtube</p>
                   </Link>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>
